@@ -115,6 +115,44 @@ Below is the best explainer I've found on the topic and what I use for reference
 ![Here's what you want.](../master/refine15.jpg)
 
 
+### Back to cleaning 
+
+
+If you hover your mouse over a particular group of results, a link will show up called "Browse this cluster." 
+
+
+![Here's what you want.](../master/refine16.jpg)
+
+
+Click on "Browse this cluter" for the North Carolina Growers Association. It'll return to the data window, but with a couple different things happening. 
+
+
+![Here's what you want.](../master/refine17.jpg)
+
+
+What's happening here is OpenRefine has highlighted all 54 rows it thinks should be turned into a single North Carolina Growers Association entry. This is an important step, in my opinion. It allows you to eyeball the data in its entirety before changing it. 
+
+Why is this important?
+
+Say we're looking at a company called Ryan's Refining Co. OpenRefine might think all Ryan Refining Co.-like entries are the same. Maybe they are. But to really know for sure, we might want to eyeball the city and state, or some other information. This allows you to do that. 
+
+If you look in the employer_name box on the left, you'll see all the incarnations of North Carolina Growers Association are highlighted in orange. 
+
+
+
+![Here's what you want.](../master/refine18.jpg)
+
+
+If you didn't want one or more of those entries to be included, you could click exclude. 
+
+
+![Here's what you want.](../master/refine19.jpg)
+
+
+Now click on Cluster. 
+
+
+Because we're OK with all the proposed changes, click the "Merge?" button. Then select "Merge Selected & Re-Cluster." 
 
 
 
