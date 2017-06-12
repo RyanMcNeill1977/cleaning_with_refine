@@ -189,6 +189,12 @@ Then hit Cluster again. Now everything looks how it should.
 
 
 
+## Now you try
+
+Take a look at the lawfirm_name field. Clean it up. Try different combinations of method and distance function while clustering. 
+
+Which lawfirm name appears the most?
+
 
 
 
