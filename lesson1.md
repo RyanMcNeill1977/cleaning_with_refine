@@ -236,12 +236,13 @@ No matter what I'm using to clean data, whether it's SQL or OpenRefine, I try an
 
 One way to do that is by using the slider in the Cluster & Edit screen. 
 
+Try adjusting the slider. See what happens?
+
+
 
 ![Here's what you want.](../master/refine25.jpg)
 
 
-
-Try adjusting the slider. See what happens?
 
 
 ## Exporting your data
