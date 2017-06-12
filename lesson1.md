@@ -65,3 +65,14 @@ On the employer_name tab, click on the little down arrow, then choose facet and 
 ![Here's what you want.](../master/refine7.jpg)
 
 
+Now you're probably going to get something that looks like this. 
+
+
+![Here's what you want.](../master/refine8.jpg)
+
+
+What we have to do is tell OpenRefine it is OK to work with more records than its default limit. Click on "Set choice count limit." OpenRefine will make a guess that's higher than the count of our records. Perfect. Click OK. 
+
+
+
+
