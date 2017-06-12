@@ -170,5 +170,25 @@ Scroll down until you find the records that OpenRefine wants to turn into A and 
 ![Here's what you want.](../master/refine21.jpg)
 
 
+See a problem? What is it?
+
+Let's click on "Browse this cluster" .... 
+
+One of these things is not like the other. We can tell that two of them belong together, in part based on the city and state of the employer. A and J Farms LLC clearly doesn't belong with the others. 
+
+Click on exclude. 
+
+
+![Here's what you want.](../master/refine22.jpg)
+
+
+Then hit Cluster again. Now everything looks how it should. 
+
+
+![Here's what you want.](../master/refine23.jpg)
+
+
+
+
 
 
