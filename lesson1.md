@@ -74,5 +74,48 @@ Now you're probably going to get something that looks like this.
 What we have to do is tell OpenRefine it is OK to work with more records than its default limit. Click on "Set choice count limit." OpenRefine will make a guess that's higher than the count of our records. Perfect. Click OK. 
 
 
+![Here's what you want.](../master/refine9.jpg)
+
+
+OK, so these are the distinct entries from our employer_name column. First, notice you have a couple options on how to sort those entries. Try clicking on count. 
+
+
+![Here's what you want.](../master/refine10.jpg)
+
+
+Now your distinct entries are sorted by the number of times they appear. Take a look in the box at the two entries I've highlighted for the North Carolina Growers Association.
+
+
+![Here's what you want.](../master/refine11.jpg)
+
+
+Therein lies the No. 1 problem with this dataset. There's no standardization of employer names. If you were to use this field in a crosstab or SQL group by statement, you wouldn't get the right answer. That's where OpenRefine really sings. 
+
+Click on Cluster.
+
+
+![Here's what you want.](../master/refine12.jpg)
+
+
+What happens now is OpenRefine uses some different methodologies to attempt to identify similar values. Right out of the chute, we see that Google Refine has recognized a number of different variations of the North Carolina Growers Association. 
+
+
+![Here's what you want.](../master/refine13.jpg)
+
+
+### Brief interlude
+
+As you can see at the top of our cluster box, OpenRefine lets you choose the method and keying function. These are just different methodlogies for how OpenRefine attempts to cluster the values.
+
+Below is the best explainer I've found on the topic and what I use for reference. It's a tipsheet from a NICAR session by Nils Mulvad and Rob Gebeloff. You can [see more here](https://github.com/gebelo/nicar2016/blob/master/refine.pdf).
+
+
+![Here's what you want.](../master/refine14.jpg)
+
+![Here's what you want.](../master/refine15.jpg)
+
+
+
+
 
 
