@@ -155,5 +155,20 @@ Now click on Cluster.
 Because we're OK with all the proposed changes, click the "Merge?" button. Then select "Merge Selected & Re-Cluster." 
 
 
+![Here's what you want.](../master/refine20.jpg)
+
+
+Once it is done, select "Close." 
+
+Now lets cluster the column again. Then click on count to sort the column based on the number of records. Notice that North Carolina Growers Association Inc. now has 54 records?
+
+Let's cluster again. 
+
+Scroll down until you find the records that OpenRefine wants to turn into A and J Farms. 
+
+
+![Here's what you want.](../master/refine21.jpg)
+
+
 
 
