@@ -13,6 +13,7 @@ If it worked correctly, you should see something that looks like this.
 
 ![Here's what you want.](../master/refine1.jpg)
 
+## Importing your data 
 
 OK, we're ready to import our data. 
 
@@ -22,5 +23,45 @@ The applicatinon process for the H2A and H2B process first requires firms to ask
 
 *Important caveat: These numbers are not neccessarily the number of workers actually imported by the company. Think of it like a maximum.*
 
+So let's go to [this DOL website](https://www.foreignlaborcert.doleta.gov/performancedata.cfm) and download the 2016 disclosure file for the H2A program. 
+
+
+![Here's what you want.](../master/refine3.jpg)
+
+Go to the Google Refine tab in your browser. Click on Choose Files. 
+
+
+![Here's what you want.](../master/refine2.jpg)
+
+Navigate to the H2A data you just downloaded. Click next. OpenRefine will inspect your data and give you a preview of the data. 
+
+First, inspect your data in the preview window. Does it look correct? Are there any problems? At the bottom, OpenRefine gives you a few options on what exactly to import.
+
+At important one you might want to remember: 
+
+Ignore first --- this woud be useful if you have a bunch of junk at the top of your page that you don't want OpenRefine to import. 
+
+
+![Here's what you want.](../master/refine4.jpg)
+
+
+If everything is how you wanted, click on "Create Project." 
+
+
+![Here's what you want.](../master/refine5.jpg)
+
+
+OpenRefine will think for a minute and then spit out a new screen. 
+
+
+![Here's what you want.](../master/refine6.jpg)
+
+
+Now we can get to work. The main thing people want to do with this data typically involves figuring out how many guest workers a company sought. But that's problematic. Let's take a look and see why. 
+
+On the employer_name tab, click on the little down arrow, then choose facet and then text facet. 
+
+
+![Here's what you want.](../master/refine7.jpg)
 
 
