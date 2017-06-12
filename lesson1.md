@@ -231,7 +231,9 @@ Then hit Cluster again. Now everything looks how it should.
 ![Here's what you want.](../master/refine23.jpg)
 
 
+## Exporting your data
 
+![Here's what you want.](../master/refine24.jpg)
 
 ## Now you try
 
