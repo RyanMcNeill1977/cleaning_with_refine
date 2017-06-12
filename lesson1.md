@@ -1,4 +1,6 @@
+# Cleaning dirty data with OpenRefine
 
+One of the most mundane tasks when working with data is cleaning it up. In the old days, I might use SQL with a series of update and group by queries. But OpenRefine has made cleaning data a lot easier, a lot faster and uses some algorithms to identify matches you might not otherwise notice. Let's dig in. 
 
 ## Installing Refine
 
@@ -12,6 +14,11 @@ If it worked correctly, you should see something that looks like this.
 
 
 ![Here's what you want.](../master/refine1.jpg)
+
+
+## The Constant Rule
+
+Remember never to work with original data, only copies of your original data. You'll thank me later. 
 
 
 ## Importing your data 
