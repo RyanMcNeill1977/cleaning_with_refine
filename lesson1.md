@@ -230,6 +230,19 @@ Then hit Cluster again. Now everything looks how it should.
 
 ![Here's what you want.](../master/refine23.jpg)
 
+## Fine tuning your efforts
+
+No matter what I'm using to clean data, whether it's SQL or OpenRefine, I try and concentrate on the most frequent records. Let's say we're planning to examine the top 10 law firms or employers. In that case, I'm going to try to focus on the entries that have a shot at being in the top 10. 
+
+One way to do that is by using the slider in the Cluster & Edit screen. 
+
+
+![Here's what you want.](../master/refine25.jpg)
+
+
+
+Try adjusting the slider. See what happens?
+
 
 ## Exporting your data
 
