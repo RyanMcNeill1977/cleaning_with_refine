@@ -13,6 +13,7 @@ If it worked correctly, you should see something that looks like this.
 
 ![Here's what you want.](../master/refine1.jpg)
 
+
 ## Importing your data 
 
 OK, we're ready to import our data. 
@@ -26,12 +27,17 @@ The applicatinon process for the H2A and H2B process first requires firms to ask
 So let's go to [this DOL website](https://www.foreignlaborcert.doleta.gov/performancedata.cfm) and download the 2016 disclosure file for the H2A program. 
 
 
+
 ![Here's what you want.](../master/refine3.jpg)
+
 
 Go to the Google Refine tab in your browser. Click on Choose Files. 
 
 
+
 ![Here's what you want.](../master/refine2.jpg)
+
+
 
 Navigate to the H2A data you just downloaded. Click next. OpenRefine will inspect your data and give you a preview of the data. 
 
@@ -42,19 +48,25 @@ At important one you might want to remember:
 Ignore first --- this woud be useful if you have a bunch of junk at the top of your page that you don't want OpenRefine to import. 
 
 
+
 ![Here's what you want.](../master/refine4.jpg)
+
 
 
 If everything is how you wanted, click on "Create Project." 
 
 
+
 ![Here's what you want.](../master/refine5.jpg)
+
 
 
 OpenRefine will think for a minute and then spit out a new screen. 
 
 
+
 ![Here's what you want.](../master/refine6.jpg)
+
 
 
 Now we can get to work. The main thing people want to do with this data typically involves figuring out how many guest workers a company sought. But that's problematic. Let's take a look and see why. 
@@ -62,31 +74,41 @@ Now we can get to work. The main thing people want to do with this data typicall
 On the employer_name tab, click on the little down arrow, then choose facet and then text facet. 
 
 
+
 ![Here's what you want.](../master/refine7.jpg)
+
 
 
 Now you're probably going to get something that looks like this. 
 
 
+
 ![Here's what you want.](../master/refine8.jpg)
+
 
 
 What we have to do is tell OpenRefine it is OK to work with more records than its default limit. Click on "Set choice count limit." OpenRefine will make a guess that's higher than the count of our records. Perfect. Click OK. 
 
 
+
 ![Here's what you want.](../master/refine9.jpg)
+
 
 
 OK, so these are the distinct entries from our employer_name column. First, notice you have a couple options on how to sort those entries. Try clicking on count. 
 
 
+
 ![Here's what you want.](../master/refine10.jpg)
+
 
 
 Now your distinct entries are sorted by the number of times they appear. Take a look in the box at the two entries I've highlighted for the North Carolina Growers Association.
 
 
+
 ![Here's what you want.](../master/refine11.jpg)
+
 
 
 Therein lies the No. 1 problem with this dataset. There's no standardization of employer names. If you were to use this field in a crosstab or SQL group by statement, you wouldn't get the right answer. That's where OpenRefine really sings. 
@@ -94,13 +116,17 @@ Therein lies the No. 1 problem with this dataset. There's no standardization of 
 Click on Cluster.
 
 
+
 ![Here's what you want.](../master/refine12.jpg)
+
 
 
 What happens now is OpenRefine uses some different methodologies to attempt to identify similar values. Right out of the chute, we see that Google Refine has recognized a number of different variations of the North Carolina Growers Association. 
 
 
+
 ![Here's what you want.](../master/refine13.jpg)
+
 
 
 ### Brief interlude
@@ -110,9 +136,12 @@ As you can see at the top of our cluster box, OpenRefine lets you choose the met
 Below is the best explainer I've found on the topic and what I use for reference. It's a tipsheet from a NICAR session by Nils Mulvad and Rob Gebeloff. You can [see more here](https://github.com/gebelo/nicar2016/blob/master/refine.pdf).
 
 
+
 ![Here's what you want.](../master/refine14.jpg)
 
 ![Here's what you want.](../master/refine15.jpg)
+
+
 
 
 ### Back to cleaning 
@@ -121,13 +150,17 @@ Below is the best explainer I've found on the topic and what I use for reference
 If you hover your mouse over a particular group of results, a link will show up called "Browse this cluster." 
 
 
+
 ![Here's what you want.](../master/refine16.jpg)
+
 
 
 Click on "Browse this cluter" for the North Carolina Growers Association. It'll return to the data window, but with a couple different things happening. 
 
 
+
 ![Here's what you want.](../master/refine17.jpg)
+
 
 
 What's happening here is OpenRefine has highlighted all 54 rows it thinks should be turned into a single North Carolina Growers Association entry. This is an important step, in my opinion. It allows you to eyeball the data in its entirety before changing it. 
@@ -143,10 +176,13 @@ If you look in the employer_name box on the left, you'll see all the incarnation
 ![Here's what you want.](../master/refine18.jpg)
 
 
+
 If you didn't want one or more of those entries to be included, you could click exclude. 
 
 
+
 ![Here's what you want.](../master/refine19.jpg)
+
 
 
 Now click on Cluster. 
@@ -155,7 +191,9 @@ Now click on Cluster.
 Because we're OK with all the proposed changes, click the "Merge?" button. Then select "Merge Selected & Re-Cluster." 
 
 
+
 ![Here's what you want.](../master/refine20.jpg)
+
 
 
 Once it is done, select "Close." 
@@ -167,7 +205,9 @@ Let's cluster again.
 Scroll down until you find the records that OpenRefine wants to turn into A and J Farms. 
 
 
+
 ![Here's what you want.](../master/refine21.jpg)
+
 
 
 See a problem? What is it?
@@ -179,13 +219,17 @@ One of these things is not like the other. We can tell that two of them belong t
 Click on exclude. 
 
 
+
 ![Here's what you want.](../master/refine22.jpg)
+
 
 
 Then hit Cluster again. Now everything looks how it should. 
 
 
+
 ![Here's what you want.](../master/refine23.jpg)
+
 
 
 
